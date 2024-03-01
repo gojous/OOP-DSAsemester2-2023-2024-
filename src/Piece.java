@@ -1,3 +1,4 @@
+package com.chess.engine.pieces;
 public class Piece {
     public enum PieceType{
         PAWN,
