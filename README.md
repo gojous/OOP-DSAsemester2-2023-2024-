@@ -44,3 +44,4 @@ The threefold repetition rule is in place to prevent players from endlessly repe
 If both players have made 50 moves without a capture or a pawn move, the game is a draw by the "50-move rule." The rule applies only to the player whose turn it is to move, and they must claim the draw before making the 50th move. If the player fails to claim the draw and makes a move, the 50-move count starts again.
 
 
+# banh
