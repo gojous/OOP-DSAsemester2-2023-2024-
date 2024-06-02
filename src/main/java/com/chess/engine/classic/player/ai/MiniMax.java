@@ -118,6 +118,30 @@ public final class MiniMax implements MoveStrategy{
         }
         return highestSeenValue;
     }
+    private static boolean isEndGameScenario(final Board board) {
+        return board.currentPlayer().isInCheckMate() ||
+               board.currentPlayer().isInStaleMate();
+    }
+    private static class FreqTableRow{
+        private final Move move;
+        private final AtomicLong count;
+        FreqTableRow(final Move move){
+            this.move=move;
+            this.count=new AtomicLong(0);
+        }
+        long getCount(){
+            return this.count.get();
+        }
+        void increment(){
+            this.count.incrementAndGet();
+        }
+        @Override
+        public String toString(){
+            return BoardUtils.INSTANCE.getPositionAtCoordinate(this.move.getCurrentCoordinate()) +
+                   BoardUtils.INSTANCE.getPositionAtCoordinate(this.move.getDestinationCoordinate()) +
+                   " : " + this.count;
+        }
+    }
 }
 
 

@@ -18,7 +18,7 @@ public enum Alliance {
             return DOWN_DIRECTION;
         }
         public boolean isPawnPromotionSquare(int position){
-            return BoardUtils.Instance.FIRST_ROW.get(position);
+            return BoardUtils.INSTANCE.FIRST_ROW.get(position);
         }
         public Player choosePlayerByAlliance(final WhitePlayer whitePlayer, final BlackPlayer blackPlayer){
             return whitePlayer;
@@ -59,7 +59,7 @@ public enum Alliance {
             return DOWN_DIRECTION;
         }
         public boolean isPawnPromotionSquare(int position){
-            return BoardUtils.Instance.EIGHTH_ROW.get[position];
+            return BoardUtils.INSTANCE.EIGHTH_ROW.get(position);
         }
         public Player choosePlayerByAlliance(final WhitePlayer whitePlayer, final BlackPlayer blackPlayer){
             return blackPlayer;

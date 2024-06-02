@@ -2,7 +2,7 @@ package com.chess.engine.classic.board;
 import java.util.ArrayList;
 import java.util.List;
 import static com.chess.engine.classic.board.Move.*;
-public class MoveUtils {
+public enum MoveUtils {
     INSTANCE;
     public static final Move NULL_MOVE= new NullMove();
     public static int exchangeScore(final Move move){
