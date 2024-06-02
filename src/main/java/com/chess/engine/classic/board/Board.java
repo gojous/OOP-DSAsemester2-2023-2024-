@@ -7,12 +7,10 @@ import java.util.HashMap;
 import java.util.Collections;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import com.chess.engine.classic.pieces.*;
 import com.chess.engine.classic.player.BlackPlayer;
 import com.chess.engine.classic.player.Player;
 import com.chess.engine.classic.player.WhitePlayer;
-
 public class Board {
     private final Map<Integer, Piece> boardConfig;  
     private final Collection<Piece> whitePieces;

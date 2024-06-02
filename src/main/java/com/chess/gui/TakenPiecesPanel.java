@@ -17,6 +17,12 @@ import com.chess.engine.classic.pieces.Piece;
 import com.chess.gui.Table.MoveLog;
 import com.google.common.primitives.Ints;
 class TakenPiecesPanel extends JPanel{
+    private final JPanel northPanel;
+    private final JPanel southPanel;
+    private static final long serialVersionUID=1L;
+    private static final Color PANE_COLOR=Color.decode("0xFDF5E6");
+    private static final Dimension TAKEN_PIECES_DIMENSION=new Dimension(40,80);
+    private static final EtchedBorder PANEL_BORDER=new EtchedBorder(EtchedBorder.RAISED);
 
     
 }

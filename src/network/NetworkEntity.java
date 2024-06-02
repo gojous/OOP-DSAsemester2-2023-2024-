@@ -46,5 +46,13 @@ public abstract class NetworkEntity extends Thread{
             } 
         }while(receivedMessage !=null);
     }
+    public void sendData(final Object obj_to_send){
+        try{
+            outputStream.writeObject(obj_to_send);
+            outputStream.flush();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
 
 }
